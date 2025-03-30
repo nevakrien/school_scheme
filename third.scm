@@ -15,6 +15,7 @@
               )))
    )
 
+;generates all permutations of a list l
 (define  (my_permutations l)
   (if (null? (cdr l)) (list l)
   (foldl (λ (perm acc)
